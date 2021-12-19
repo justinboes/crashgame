@@ -1,0 +1,110 @@
+/*Setting font and website margin and padding*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*header height and width*/
+
+.header{
+min-height: 2vh;
+width: 100%;
+}
+
+/*Location and display settings for tabs of website*/
+nav{
+    display: flex;
+    padding: .5% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+/*Makes tabs horizontal */
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/*Makes tabs sets color of text in tabs */
+.nav-links ul li a{
+    color: rgb(23, 52, 218);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*When hovering over puts blue underline under text of tab */
+.nav-links ul li::after{
+content: "";
+width: 0%;
+height: 2px;
+background: rgb(23, 52, 218);
+display: block;
+margin: auto;
+transition: .5s;
+}
+
+/*After hovering over removes blue underline under text of tab */
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+/*Styling for text box on instructions tab */
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    text-align: center;
+
+}
+/*Styling for second text box on instructions tab */
+.text-2{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    text-align: left;
+    font-size: 30px;
+ margin-bottom: 2em; 
+}
+
+/*Settings for video on probability tab */
+.video{
+    position: relative; 
+    padding-top: 20%;
+    height: 0px;
+}
+
+.video iframe{
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*Styling for text box on probability tab */
+.text-box3{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    text-align: center;  
+}
